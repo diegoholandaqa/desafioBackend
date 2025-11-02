@@ -21,7 +21,7 @@ test('Recuperar livro via id e exibe o json do livro', async () => {
     console.log('Livro recuperado:', JSON.stringify(body, null, 2));
 });
 
-test.skip('Recuperar livro criado', async () => {
+test.skip('Recuperar livro criado utilizando dados do fixture', async () => {
 // Nao é possível recuperar o livro criado em outro teste, pois a API é fake e os dados não persistem entre as requisições.
     const request = await createRequestContext();
     const bookData = generateBookData();

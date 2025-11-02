@@ -49,7 +49,7 @@ test('Atualizar título de um livro qualquer passando id', async () => {
   // contudo a api é uma api fake, então as alterações não persistem.
   // De qualquer forma, deixo o código abaixo como exemplo de como seria essa validação.
   
-  // const getBookNt = await apiRequest(request, 'GET', `Books/${bookId}`);
+  // const getBookNt = await apiRequest(request, 'GET', `/api/v1/Books/${bookId}`);
   // const getBodyNt = await getResponse.json();
   // expect(getBodyNt.title).toBe('Título Atualizado via PUT');
 });

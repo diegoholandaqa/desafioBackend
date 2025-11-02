@@ -19,7 +19,7 @@ import { apiRequest, createRequestContext } from '../fixtures/api_helper';
 
 
   //Deletar ID inexistente, aqui foi necessario criar um id de 10 digitos para que retornasse erro no endpoint
-  test('Deletar ID inexistente deve falhar', async () => {
+  test('Deletar livro com id inexistente', async () => {
     const request = await createRequestContext();
     const fakeId = Number(new Date().getTime().toString().slice(-11));
     const response = await apiRequest(request, 'DELETE', `/api/v1/Books/${fakeId}`);
